@@ -14,6 +14,7 @@ async def set_commands(bot: Bot):
     commands = [
         BotCommand(command="/me", description="Використання: /me (дія від першої особи)"),
         BotCommand(command="/do", description="Використання: /do (дія від третьої особи)"),
+        BotCommand(command="/todo", description="Використання: /todo (діалог)*(дія від першої особи)"),
         BotCommand(command="/try", description="Використання: /try (дія від першої ссоби)")
     ]
     await bot.set_my_commands(commands)
